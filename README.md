@@ -15,7 +15,7 @@ Using Fashion-MNIST dataset, the model achieved the following results:
 - **Recall**: **88.53%**
 - **F1-Score**: **88.50%**
 ---
-![Fashion-MNIST](https://github.com/LadyAmely/VGGNet-tensorflow/blob/master/plots/predictions_visualizations.png)
+![Fashion-MNIST](https://github.com/LadyAmely/DenseNet-tensorflow/blob/master/plots/predictions_visualizations.png)
 
 ## References
 Original Paper: ["Very Deep Convolutional Networks for Large-Scale Image Recognition"](https://arxiv.org/pdf/1409.1556).
