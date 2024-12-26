@@ -1,5 +1,6 @@
 import tensorflow as tf
-class DenseNet:
+
+class DenseNet(tf.keras.Model):
 
     def __init__(self, input_shape, num_blocks, num_layers_per_block, growth_rate, reduction, num_classes):
         self.input_shape = input_shape
@@ -46,17 +47,3 @@ class DenseNet:
         outputs = tf.keras.layers.Dense(self.num_classes, activation="softmax")(x)
         model = tf.keras.Model(inputs, outputs)
         return model
-
-
-input_shape = (224, 224, 3)
-num_blocks = 4
-num_layers_per_block = 6
-growth_rate = 32
-reduction = 0.5
-num_classes = 1000
-
-
-dense_net = DenseNet(input_shape, num_blocks, num_layers_per_block, growth_rate, reduction, num_classes)
-model = dense_net.call()
-
-model.summary()
